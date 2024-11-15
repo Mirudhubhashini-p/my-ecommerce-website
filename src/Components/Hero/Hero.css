@@ -1,0 +1,169 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-home {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    text-align: left;
+    color: white;
+}
+
+.main-text h5 {
+    color: rgba(238, 7, 130, 0.93);
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.main-text h1 {
+    color: rgb(252, 249, 249);
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin: 6px 0 10px;
+}
+
+.main-text p {
+    font-size: 18px;
+    color: rgb(252, 248, 248);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    color: #fbf6f6;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    transition: all .42s ease;
+    text-decoration: none;
+    background-color: #ff4141;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.main-btn i {
+    vertical-align: middle;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+span {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .main-text h1 {
+        font-size: 45px;
+    }
+
+    .main-text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-home {
+        padding-left: 30px;
+    }
+
+    .main-text h1 {
+        font-size: 40px;
+    }
+
+    .main-text p {
+        font-size: 14px;
+    }
+
+    .main-btn {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-text h5 {
+        font-size: 24px;
+    }
+
+    .main-text h1 {
+        font-size: 35px;
+    }
+
+    .main-text p {
+        font-size: 13px;
+    }
+
+    .main-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-home {
+        padding-left: 15px;
+        justify-content: center;
+    }
+
+    .main-text h5 {
+        font-size: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 30px;
+    }
+
+    .main-text p {
+        font-size: 12px;
+    }
+
+    .main-btn {
+        padding: 6px 18px;
+        font-size: 12px;
+    }
+}
+
+@media(min-aspect-ratio:16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
